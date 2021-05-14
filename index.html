@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animais fantasticos</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+ 
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap+sc"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/assets/css/style.css" />
+
+
   </head>
   <body>
-    <nav class="menu">
+    <nav class="menu js-linkMenu">
       <ul>
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -25,7 +28,7 @@
     <section class="grid-section animais" id="animais">
       <h1 class="titulo">Animais fantasticos</h1>
 
-      <ul class="animais-lista">
+      <ul class="animais-lista js-tabmenu">
         <li><img src="/assets/img/imagem1.jpg" /></li>
 
         <li><img src="/assets/img/imagem2.jpg" /></li>
@@ -39,7 +42,7 @@
         <li><img src="/assets/img/imagem6.jpg" /></li>
       </ul>
 
-      <div class="animais-descricao">
+      <div class="animais-descricao js-tabcontent">
         <section>
           <h2>Raposa</h2>
           <p>
@@ -150,7 +153,7 @@
       
     </section>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-accordion" id="faq">
       <h1 class="titulo">Faq</h1>
       <dl class="faq-lista">
         <dt>Qual a idade dos animais?</dt>
@@ -196,6 +199,9 @@
       <p>Todos os direitos reservados.</p>
     </footer>
 
+
+    <script src="/assets/js/site.js"></script>
     <script src="/assets/js/script.js"></script>
+
   </body>
 </html>

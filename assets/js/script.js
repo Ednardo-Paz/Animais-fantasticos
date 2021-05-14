@@ -217,18 +217,18 @@
 
 // Selecione todos os elementos do site começando a partir do
 //body,
-const body = document.querySelectorAll(`body *`);
-console.log(body);
+// const body = document.querySelectorAll(`body *`);
+// console.log(body);
 // ao clique mostre exatamente quais elementos estão sendo
 //clicados
 
-function mostrarElem(e){
-   console.log( e.target.remove())
-}
+// function mostrarElem(e){
+//    console.log( e.target.remove())
+// }
 
-body.forEach(function(item){
-    item.addEventListener(`click`, mostrarElem)
-})
+// body.forEach(function(item){
+//     item.addEventListener(`click`, mostrarElem)
+// })
 // Utilizando o código anterior, ao invés de mostrar no
 //console,
 // remova o elemento que está sendo clicado, o método remove()
@@ -242,3 +242,57 @@ body.forEach(function(item){
 // }
 
 // window.addEventListener(`keydown`, presT)
+
+//---------------------------------------- Traversing e Manipulação 1----------------------------------
+const h1 = document.querySelector(`h1`);
+// const animaisLista = document.querySelector(`.animais-descricao`);
+
+// console.log(h1.outerHTML)
+// console.log(h1.innerHTML)
+// console.log(h1.innerText)
+
+// const lista = document.querySelector(`.animais-lista`);
+// console.log(lista.parentElement)
+// console.log(lista.nextElementSibling)
+// console.log(lista.previousElementSibling)
+
+// const animais = document.querySelector(`.animais`);
+// const contato = document.querySelector(`.contato`);
+
+
+const mapa = document.querySelector(`.mapa`);
+
+// contato.insertBefore(animais,mapa)
+
+const novoH1 = document.createElement(`h1`)
+
+novoH1.classList.add(`titulo`)
+
+mapa.appendChild(novoH1)
+novoH1.innerHTML = `Novo titulo`
+
+// duplique o menu e o mova para copy
+// const copy = document.querySelector(`.copy`)
+// const menu = document.querySelector(`.menu`);
+
+// const menuclone = menu.cloneNode(true);
+
+// copy.appendChild(menuclone)
+
+// // selecione o primeiro dt da dl de faq
+const faq = document.querySelector(`.faq`)
+// const primeiroDt = document.querySelector(`dt`)
+
+// const primeiroDD = primeiroDt.nextElementSibling
+
+// console.log(primeiroDD)
+
+// //substitua o HTML de faq pelo de animais
+// const animais = document.querySelector(`.animais`);
+
+// menu.innerHTML = animais.innerHTML
+
+
+
+
+
