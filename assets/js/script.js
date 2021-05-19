@@ -260,16 +260,16 @@ const h1 = document.querySelector(`h1`);
 // const contato = document.querySelector(`.contato`);
 
 
-const mapa = document.querySelector(`.mapa`);
+// const mapa = document.querySelector(`.mapa`);
 
-// contato.insertBefore(animais,mapa)
+// // contato.insertBefore(animais,mapa)
 
-const novoH1 = document.createElement(`h1`)
+// const novoH1 = document.createElement(`h1`)
 
-novoH1.classList.add(`titulo`)
+// novoH1.classList.add(`titulo`)
 
-mapa.appendChild(novoH1)
-novoH1.innerHTML = `Novo titulo`
+// mapa.appendChild(novoH1)
+// novoH1.innerHTML = `Novo titulo`
 
 // duplique o menu e o mova para copy
 // const copy = document.querySelector(`.copy`)
@@ -280,7 +280,7 @@ novoH1.innerHTML = `Novo titulo`
 // copy.appendChild(menuclone)
 
 // // selecione o primeiro dt da dl de faq
-const faq = document.querySelector(`.faq`)
+// const faq = document.querySelector(`.faq`)
 // const primeiroDt = document.querySelector(`dt`)
 
 // const primeiroDD = primeiroDt.nextElementSibling
