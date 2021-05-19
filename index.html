@@ -15,8 +15,9 @@
 
 
   </head>
+  
   <body>
-    <nav class="menu js-menu">
+    <nav class="menu " data-menu="suave">
       <ul>
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -25,10 +26,10 @@
       </ul>
     </nav>
 
-    <section class="grid-section animais js-scroll" id="animais">
+    <section class="grid-section animais " id="animais" data-anime="scroll">
       <h1 class="titulo">Animais fantasticos</h1>
 
-      <ul class="animais-lista js-tabmenu">
+      <ul class="animais-lista " data-tab="menu">
         <li><img src="/assets/img/imagem1.jpg" /></li>
 
         <li><img src="/assets/img/imagem2.jpg" /></li>
@@ -42,8 +43,8 @@
         <li><img src="/assets/img/imagem6.jpg" /></li>
       </ul>
 
-      <div class="animais-descricao js-tabcontent">
-        <section>
+      <div class="animais-descricao  " data-tab = "content">
+        <section data-anime="show-rigth">
           <h2>Raposa</h2>
           <p>
             Raposas são pequenos a médios mamíferos onívoros pertencentes a
@@ -61,7 +62,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-down">
           <h2>Esquilo</h2>
           <p>
             Raposas são pequenos a médios mamíferos onívoros pertencentes a
@@ -79,7 +80,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-rigth">
           <h2>Urso</h2>
           <p>
             Raposas são pequenos a médios mamíferos onívoros pertencentes a
@@ -97,7 +98,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-down">
           <h2>Lobo</h2>
           <p>
             Raposas são pequenos a médios mamíferos onívoros pertencentes a
@@ -115,7 +116,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-down">
           <h2>Macaco</h2>
           <p>
             Raposas são pequenos a médios mamíferos onívoros pertencentes a
@@ -133,7 +134,7 @@
           </p>
         </section>
 
-        <section>
+        <section data-anime="show-rigth">
           <h2>Leão</h2>
           <p>
             Raposas são pequenos a médios mamíferos onívoros pertencentes a
@@ -153,9 +154,9 @@
       
     </section>
 
-    <section class="grid-section faq js-accordion js-scroll" id="faq">
+    <section class="grid-section faq  " id="faq" data-anime="scroll">
       <h1 class="titulo">Faq</h1>
-      <dl class="faq-lista">
+      <dl class="faq-lista" data-anime="accordion" >
         <dt>Qual a idade dos animais?</dt>
         <dd>
           As raposas são animais mamíferos e onívoros pertencentes à família
@@ -181,7 +182,7 @@
       </dl>
     </section>
 
-    <section class="grid-section contato js-scroll" id="contato">
+    <section class="grid-section contato " id="contato" data-anime="scroll">
       <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="/assets/img/mapa.png" />
@@ -199,9 +200,8 @@
       <p>Todos os direitos reservados.</p>
     </footer>
 
-
-    <script src="/assets/js/site.js"></script>
-    <script src="/assets/js/script.js"></script>
+ 
+    <script type="module" src="/assets/js/js/novoscript.js"></script>
 
   </body>
 </html>
