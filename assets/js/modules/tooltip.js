@@ -31,7 +31,7 @@ const onMouseMove = {
     this.tooltipBox.style.left = event.pageX + 20 + `px`;
   },
 };
-
+// element é o item 
 function criarTooltipBox(element) {
   const tooltipBox = document.createElement(`div`);
   const text = element.getAttribute(`area-label`);
