@@ -9,9 +9,9 @@ export default function initAnimeScroll() {
         const isSectionVisible = sec - metadeTela < 0;
         if (isSectionVisible) {
           item.classList.add(`ativo`);
-        } else 
+        } else if(item.classList.contains(`ativo`)){
           item.classList.remove(`ativo`);
-        
+        }
       });
     }
     animaScroll();
