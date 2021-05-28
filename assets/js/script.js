@@ -244,7 +244,7 @@
 // window.addEventListener(`keydown`, presT)
 
 //---------------------------------------- Traversing e Manipulação 1----------------------------------
-const h1 = document.querySelector(`h1`);
+// const h1 = document.querySelector(`h1`);
 // const animaisLista = document.querySelector(`.animais-descricao`);
 
 // console.log(h1.outerHTML)
