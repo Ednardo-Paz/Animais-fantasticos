@@ -1,8 +1,4 @@
-export default function initFetchBiticoin(){}
-
-
-//https//blockchain.info/ticher
-
+export default function initFetchBiticoin(){
 
 const bitcoin = fetch(`https://blockchain.info/ticker`)
 .then(r => r.json())
@@ -14,5 +10,5 @@ const bitcoin = fetch(`https://blockchain.info/ticker`)
     console.log(Error(erro));
 })
 
-
+}
 
