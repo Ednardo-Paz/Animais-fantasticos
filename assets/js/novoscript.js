@@ -2,7 +2,7 @@ import initAnimeScroll from "./modules/scroll-animacao.js";
 import ScrollSuave from "./modules/scroll-suave.js";
 import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabnav.js";
-import initmodal from "./modules/modal.js";
+import Modal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropDown from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
@@ -19,14 +19,13 @@ accordion.init();
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
 tabNav.init();
 
+const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
+modal.init();
+
 initFetchAnimais();
 initFuncionamento();
 initMenuMobile();
 initAnimeScroll();
-
-
-
-initmodal();
 initTooltip();
 initDropDown();
 initFetchBiticoin();
