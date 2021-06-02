@@ -4,9 +4,9 @@ import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
-import initDropDown from "./modules/dropdown-menu.js";
-import initMenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
+import DropdownMenu from "./modules/dropdown-menu.js";
+import MenuMobile from "./modules/menu-mobile.js";
+import Functionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-biticoin.js";
 
@@ -30,15 +30,22 @@ const modal = new Modal(
 modal.init();
 
 const tooltip = new Tooltip("[data-tooltip]");
-console.log(tooltip.init());
+tooltip.init();
 
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
 scrollAnima.init();
 
-initFuncionamento();
-initMenuMobile();
-initDropDown();
+const dropdownMenu = new DropdownMenu('[data-dropdown]');
+dropdownMenu.init();
+
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
+
+const funcionamento = new Functionamento('[data-semana]', 'aberto');
+console.log(funcionamento);
+
+funcionamento.init();
 
 fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
 
-fetchAnimais('../../animaisapi.json', '.numeros-grid');
+fetchAnimais('./animaisapi.json', '.numeros-grid');
