@@ -7,7 +7,7 @@ import Tooltip from "./modules/tooltip.js";
 import initDropDown from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
-import initFetchAnimais from "./modules/fetch-animais.js";
+import fetchAnimais from "./modules/fetch-animais.js";
 import initFetchBiticoin from "./modules/fetch-biticoin.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
@@ -16,18 +16,26 @@ scrollSuave.init();
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
-const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+const tabNav = new TabNav(
+  '[data-tab="menu"] li',
+  '[data-tab="content"] section',
+);
 tabNav.init();
 
-const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
+const modal = new Modal(
+  '[data-modal="abrir"]',
+  '[data-modal="fechar"]',
+  '[data-modal="container"]',
+);
 modal.init();
 
-const tooltip = new Tooltip('[data-tooltip]');
+const tooltip = new Tooltip("[data-tooltip]");
 console.log(tooltip.init());
 
-initFetchAnimais();
 initFuncionamento();
 initMenuMobile();
 initAnimeScroll();
 initDropDown();
 initFetchBiticoin();
+
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
