@@ -1,2 +1,4 @@
 # Animais-fantasticos
- Site criado para a pratica de JS.
+ Site criado no curso da Origamid para a pratica de JS.
+
+https://ednardoanimaisfantasticos.netlify.app/
